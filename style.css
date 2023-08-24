@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+.content-section{
+    min-height: 80vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+header{
+    background-color: black;
+    height: 4rem;
+}
+
+header > button{
+    height: 2rem;
+}
+
+.img-with-video{
+    position: relative;
+}
+
+.img-with-video video {
+    position: absolute;
+}
+
+.main-landing-page {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+
+   background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("./background.jpeg");
+
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    z-index: -5;
+}
+
+.landing-page__email{
+    margin: auto;
+    
+    max-width: 30rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.landing-page__email button{
+    width: 25rem;
+    max-width: 80%;
+    height: 3.5rem;
+
+    color: white;
+    background-color: red;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+
+
+}
+
+.landing-page__email input{
+    height: 3.5rem;
+    width: 36rem;
+    max-width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 1.3em;
+    border: 1px solid grey;
+    border-radius: .25rem;
+    padding-inline: 1rem;
+}
+
+.content-heading{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-inline: auto;
+    max-width: 45ch;
+}
+
+.content-text{
+    font-size: 1.5rem;
+    max-width: 60ch;
+    margin-inline: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .landing-page__email{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .content-heading{
+    font-size: 2rem;
+    
+    }
+
+    .content-text{
+    font-size: 1rem;
+    }
+    
+}
+.section-card{
+	background-color:black;
+	
+	min-height: 150vh;
+   
+}
+.card{
+	background-color: #5b5858;
+	
+}
+.card-header a{
+	font-size: 1.3rem;
+	color: white;
+}
+.card-body{
+	font-size: 1.2rem;
+	color: white;
+}
+.video-content-wrapper{
+	position: relative;
+	display: flex;
+	/*justify-content: center;
+	align-items: center;*/
+}
+.video-content-wrapper img{
+	z-index: 1;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.video-content-wrapper video{
+	position: absolute;
+	width: 75%;
+	max-width: 30rem;
+	z-index: 0;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-53%);
+}
+.video-content-wrapper .wrapper-video{
+margin: 0;
+position: absolute;
+width: 55%;
+max-width: 25rem;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-85%);
+}
+
+
+
+/*****footer*******/
+.footer{
+	background-color: black;
+}
+
+/* --- */
+
+/*.card-1 .content-tv {
+	position: relative;
+}
+.card-1 .content-tv video {
+	position: absolute;
+    top: 0;
+    right: 0;
+}*/
+ 
